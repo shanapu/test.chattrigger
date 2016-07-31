@@ -9,7 +9,7 @@ public OnPluginStart()
 
 public Action:TestOn(client, args)
 {
-	PrintToChatAll("Hello world")
+	PrintToChatAll("Hello world");
 }
 
 
