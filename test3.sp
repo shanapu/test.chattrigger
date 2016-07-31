@@ -1,5 +1,5 @@
 #include <sourcemod>
-#pragma newdecls required   // now need but will check for 1.7 syntax
+#pragma newdecls required   // not need but will check for 1.7 syntax
 
 public void OnPluginStart()
 {
