@@ -1,13 +1,14 @@
 #include <sourcemod>
+#pragma newdecls required   // now need but will check for 1.7 syntax
 
-public OnPluginStart()
+public void OnPluginStart()
 {
 	
 	RegConsoleCmd("sm_test1", TestOn);
 	
 }
 
-public Action:TestOn(client, args)
+public Action TestOn(int client, int args)
 {
 	PrintToChatAll("Hello world");
 }
