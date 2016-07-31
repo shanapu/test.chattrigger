@@ -13,9 +13,9 @@ public OnPluginStart()
 public PlayerSay(Handle:event, String:name[], bool:dontBroadcast)
 {
 	
-	decl String:text[256];
-	GetEventString(event, "text", text, sizeof(text));
-	if (StrEqual(text, "!test2"))
+	decl String:textbuffer[256];
+	GetEventString(event, "text", textbuffer, sizeof(textbuffer));
+	if (StrEqual(textbuffer, "!test2"))
 	{
 		PrintToChatAll("Hello world")
 	}
